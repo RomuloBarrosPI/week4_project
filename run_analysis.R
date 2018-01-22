@@ -150,4 +150,5 @@ final_data <- aggregate(merged_data[,3:68],
 
 rm(merged_data) # free memory
 
+# Create the "final_data.txt" file
 write.table(final_data,file = "final_data.txt", row.names = FALSE)
