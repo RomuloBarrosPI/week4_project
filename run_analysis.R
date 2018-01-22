@@ -149,3 +149,5 @@ final_data <- aggregate(merged_data[,3:68],
         arrange(subject)
 
 rm(merged_data) # free memory
+
+write.table(final_data,file = "final_data.txt", row.names = FALSE)
