@@ -6,7 +6,7 @@ The problem consists of having two different data sets divided into 6 different 
 
 The files for each data set are:
 
-- y_train.txt / y_test.txt: a single-variable data set containing the activity performed by the subject.
+- y_train.txt / y_test.txt: a single-variable data set containing the ID of the activity performed by the subject.
 - subject_train.txt / subject_test.txt: a single-variable data set containing the ID of the subject.
 - X_train.txt / X_test.txt: a data set containing recordings of 561 different variables.
 
