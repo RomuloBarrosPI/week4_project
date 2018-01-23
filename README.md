@@ -1,4 +1,4 @@
-# Reade me
+# Read me
 
 ### This file explains how the script works
 
