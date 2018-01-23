@@ -3,11 +3,14 @@ require(dplyr)
 require(stringr)
 
 # Create the directories to store merged data sets
-if (!dir.exists("./data/merged")) { dir.create("./data/merged") }
+if (!dir.exists("UCI HAR Dataset/merged")) { 
+        
+        dir.create("UCI HAR Dataset/merged") 
+}
 
 # Get a list of all the files containing the train sets in order to use them 
 # as the guide to find their test sets peers
-files <- list.files(path = "./data/train",
+files <- list.files(path = "UCI HAR Dataset/train",
                     full.names = TRUE,
                     pattern = "_train.txt$")
 
@@ -49,7 +52,7 @@ for (each_file in files) {
 rm(files) # free memory
 
 # Read the features.txt file
-features_names <- read.table("features.txt", stringsAsFactors = FALSE)
+features_names <- read.table("UCI HAR Dataset/features.txt", stringsAsFactors = FALSE)
 
 # Use regular expression to select only the mean and the standard deviation 
 # features' names
@@ -75,7 +78,7 @@ features_var_names <- sub(pattern = '\\()',
                           x = features_var_names)
 
 # Read the X_merged file (X_train and X_test merged)
-X_merged <- read.table("data/merged/X_merged.txt",
+X_merged <- read.table("UCI HAR Dataset/merged/X_merged.txt",
                        stringsAsFactors = FALSE)
 
 # Get only the mean and std variables from X_merged, and store the result in 
@@ -91,11 +94,11 @@ names(readings) <- features_var_names
 rm(features_var_names) # free memory
 
 # Read subject
-subjects <- read.table("data/merged/subject_merged.txt",
+subjects <- read.table("UCI HAR Dataset/merged/subject_merged.txt",
                        stringsAsFactors = FALSE)
 
 # Read Y (activities)
-activities <- read.table("data/merged/Y_merged.txt",
+activities <- read.table("UCI HAR Dataset/merged/Y_merged.txt",
                          stringsAsFactors = FALSE)
 
 # Merge subject and activity variables
@@ -107,7 +110,7 @@ rm(subjects, activities) # free memory
 names(merged_data) <- c("subject", "activity")
 
 # Read the activity labels file
-activity_labels <- read.table("activity_labels.txt", stringsAsFactors = FALSE)
+activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt", stringsAsFactors = FALSE)
 
 # Extract activities' names from activity_labels data frame, and store them 
 # in a single vector to use them as labels when creating factors
@@ -150,5 +153,5 @@ final_data <- aggregate(merged_data[,3:68],
 
 rm(merged_data) # free memory
 
-# Create the "final_data.txt" file
+# Create the "final_data.txt" file in the working directory
 write.table(final_data,file = "final_data.txt", row.names = FALSE)
