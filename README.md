@@ -29,12 +29,12 @@ require(stringr)
 
 Create the directories to store merged data sets
 ```{r}
-if (!dir.exists("./data/merged")) { dir.create("./data/merged") }
+if (!dir.exists("UCI HAR Dataset/merged")) { dir.create("UCI HAR Dataset/merged") }
 ```
 
  Get a list of all the files containing the train sets in order to use them as the guide to find their peers
 ```{r}
-files <- list.files(path = "./data/train",
+files <- list.files(path = "UCI HAR Dataset/train",
                           full.names = TRUE,
                           pattern = "_train.txt$")
 ```
@@ -111,7 +111,7 @@ features_var_names <- sub(pattern = '\\()',
 
  Read the X_merged file (X_train and X_test merged)
 ```{r}
-X_merged <- read.table("data/merged/X_merged.txt",
+X_merged <- read.table("UCI HAR Dataset/merged/X_merged.txt",
                        stringsAsFactors = FALSE)
 ```
 
@@ -131,13 +131,13 @@ rm(features_var_names) # free memory
 
  Read subject
 ```{r}
-subjects <- read.table("data/merged/subject_merged.txt",
+subjects <- read.table("UCI HAR Dataset/merged/subject_merged.txt",
                                stringsAsFactors = FALSE)
 ```
 
  Read Y
 ```{r}
-activities <- read.table("data/merged/Y_merged.txt",
+activities <- read.table("UCI HAR Dataset/merged/Y_merged.txt",
                                stringsAsFactors = FALSE)
 ```
 
@@ -155,7 +155,7 @@ names(merged_data) <- c("subject", "activity")
 
  Read the activity labels file
 ```{r}
-activity_labels <- read.table("activity_labels.txt", stringsAsFactors = FALSE)
+activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt", stringsAsFactors = FALSE)
 ```
 
  Extract activities' names from activity_labels data frame, and store them in a single vector to use them as labels when creating factors
@@ -202,7 +202,7 @@ Turn subject variable into a factor
 final_data$subject <- factor(final_data$subject, levels = 1:30)
 ```
 
-Create the file containing the final_data data frame
+Create the file containing the final_data data frame in the working directoty
 ```{r}
 write.table(final_data,file = "final_data.txt", row.names = FALSE)
 ```
