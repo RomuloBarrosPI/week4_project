@@ -3,9 +3,9 @@ Code Book
 
 |Variable|Description|Unit|
 |--------|-----------|----|
-|subject| the ID of the subject from which the records were collected| |
-|activity| the activity | |
-|tBodyAcc_mean_XYZ| | |
+|subject| The ID of the subject from which the records were collected| |
+|activity| The activity performed by the subject | |
+|tBodyAcc_mean_XYZ| for each of the 3 axis (X, Y, and Y)| |
 |tBodyAcc_std_XYZ| | |
 |tGravityAcc_mean_XYZ| | |
 |tGravityAcc_std_XYZ| | |
