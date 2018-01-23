@@ -21,8 +21,8 @@ Code Book
 |tGravityAccMag_std| The standard deviation of gravity acceleration magnitude |
 |tBodyAccJerkMag_mean| The mean of jerk signals from the estimated body acceleration |
 |tBodyAccJerkMag_std| The standard deviation of jerk signals from the estimated body acceleration |
-|tBodyGyroMag_mean| The mean of the estimated body angular velocity from the gyroscope |
-|tBodyGyroMag_std| The standard deviation of the estimated body angular velocity from the gyroscope |
+|tBodyGyroMag_mean| The mean of the magnitude of the estimated body angular velocity from the gyroscope |
+|tBodyGyroMag_std| The standard deviation of the magnitude of the estimated body angular velocity from the gyroscope |
 |tBodyGyroJerkMag_mean| The mean of jerk signals from the estimated body angular velocity from the gyroscope |
 |tBodyGyroJerkMag_std| The standard deviation of the jerk signals from estimated body angular velocity from the gyroscope |
 |fBodyAcc_mean_XYZ|  The mean of the estimated body acceleration for each of the 3 axis (X, Y, and Y)|
@@ -31,11 +31,11 @@ Code Book
 |fBodyAccJerk_std_XYZ| The standard deviation of  for each of the 3 axis (X, Y, and Y)|
 |fBodyGyro_mean_XYZ| The mean of the estimated body angular velocity from the gyroscope for each of the 3 axis (X, Y, and Y)|
 |fBodyGyro_std_XYZ| The standard deviation of the estimated body angular velocity from the gyroscope for each of the 3 axis (X, Y, and Y)|
-|fBodyAccMag_mean| The mean of |
-|fBodyAccMag_std| The standard deviation of  |
-|fBodyBodyAccJerkMag_mean| The mean of |
-|fBodyBodyAccJerkMag_std| The standard deviation of |
-|fBodyBodyGyroMag_mean| The mean of the estimated body angular velocity from the gyroscope for each of the 3 axis (X, Y, and Y)|
-|fBodyBodyGyroMag_std| The standard deviation of the estimated body angular velocity from the gyroscope for each of the 3 axis (X, Y, and Y)|
-|fBodyBodyGyroJerkMag_mean| The mean of the estimated body angular velocity from the gyroscope for each of the 3 axis (X, Y, and Y)|
-|fBodyBodyGyroJerkMag_std| The standard deviation of the estimated body angular velocity from the gyroscope for each of the 3 axis (X, Y, and Y)|
+|fBodyAccMag_mean| The mean of  the magnitude of |
+|fBodyAccMag_std| The standard deviation of the magnitude of  |
+|fBodyBodyAccJerkMag_mean| The mean of the magnitude of |
+|fBodyBodyAccJerkMag_std| The standard deviation of the magnitude of |
+|fBodyBodyGyroMag_mean| The mean of the magnitude of the estimated body angular velocity from the gyroscope for each of the 3 axis (X, Y, and Y)|
+|fBodyBodyGyroMag_std| The standard deviation of the magnitude of the estimated body angular velocity from the gyroscope for each of the 3 axis (X, Y, and Y)|
+|fBodyBodyGyroJerkMag_mean| The mean of the magnitude of the estimated body angular velocity from the gyroscope for each of the 3 axis (X, Y, and Y)|
+|fBodyBodyGyroJerkMag_std| The standard deviation of the magnitude of the estimated body angular velocity from the gyroscope for each of the 3 axis (X, Y, and Y)|
