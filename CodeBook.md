@@ -154,7 +154,7 @@ merged_data <- cbind(merged_data, readings)
 rm(readings) # free memory
 ```
 
-## Calculates the mean value for each variable for each subject and activity
+Calculates the mean value for each variable for each subject and activity
 ```{r}
 final_data <- aggregate(merged_data[,3:68], 
                         list(merged_data$subject, merged_data$activity),
@@ -166,7 +166,7 @@ final_data <- aggregate(merged_data[,3:68],
 rm(merged_data) # free memory
 ```
 
-## Use the edited variable names as labels to the factors created for the activity column of final_data
+Use the edited variable names as labels to the factors created for the activity column of final_data
 ```{r}
 final_data$activity <- factor(final_data$activity,
                                levels = 1:6,
@@ -175,12 +175,12 @@ final_data$activity <- factor(final_data$activity,
 rm(activity_labels) # free memory
 ```
 
-## Turn subject variable into a factor
+Turn subject variable into a factor
 ```{r}
 final_data$subject <- factor(final_data$subject, levels = 1:30)
 ```
 
-## Create the file containing the final_data data frame
+Create the file containing the final_data data frame
 ```{r}
 write.table(final_data,file = "final_data.txt", row.names = FALSE)
 ```
