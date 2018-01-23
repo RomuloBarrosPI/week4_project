@@ -116,25 +116,30 @@ activity_labels <- as.character(activity_labels$V2)
 activity_labels <- tolower(activity_labels) # All characters to lowercase
 activity_labels <- sub("walking_", "", activity_labels) # Just upstairs and downstairs, instead of walking_upstairs and walking_downstairs
 
-# Use the edited variable names as labels to the factors created for the activity column of merged_data
-merged_data$activity <- factor(merged_data$activity,
-                               levels = 1:6,
-                               labels = activity_labels
-                               )
-rm(activity_labels) # free memory
-
 # Merge feature values with subject and activity values
 merged_data <- cbind(merged_data, readings)
 
 rm(readings) # free memory
 
-# Create factors for the subject column
-merged_data$subject <- factor(merged_data$subject, levels = 1:30)
-
-final_data <- aggregate(merged_data[,3:68], list(merged_data$subject, merged_data$activity), "mean") %>% rename(subject = Group.1, activity = Group.2) %>% arrange(subject)
+final_data <- aggregate(merged_data[,3:68], 
+                        list(merged_data$subject, merged_data$activity),
+                        "mean") %>% 
+        rename(subject = Group.1,
+               activity = Group.2) %>% 
+        arrange(subject)
 
 rm(merged_data) # free memory
 
-View(final_data)
-```
+# Use the edited variable names as labels to the factors created for the activity column of final_data
+final_data$activity <- factor(final_data$activity,
+                               levels = 1:6,
+                               labels = activity_labels
+                               )
+rm(activity_labels) # free memory
 
+# Turn subject column values into factors
+final_data$subject <- factor(final_data$subject, levels = 1:30)
+
+# Create the file containing the final_data data frame
+write.table(final_data,file = "final_data.txt", row.names = FALSE)
+```
