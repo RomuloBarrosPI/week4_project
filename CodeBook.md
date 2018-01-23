@@ -2,6 +2,7 @@ Code Book
 =========
 
 |Variable|Description|Unit|
+|--------|-----------|----|
 |subject| the ID of the subject from which the records were collected| |
 |activity| the activity | |
 |tBodyAcc_mean_XYZ| | |
