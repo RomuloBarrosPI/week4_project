@@ -26,16 +26,16 @@ Code Book
 |41|tBodyGyroJerkMag_mean| The mean of the magnitude of the jerk signals from the estimated body angular velocity from the gyroscope |
 |42|tBodyGyroJerkMag_std| The standard deviation of the magnitude of the jerk signals from estimated body angular velocity from the gyroscope |
 |43-45|fBodyAcc_mean_XYZ| The "same" as the 3-5 variable, but in the frequency domain |
-|46-48|fBodyAcc_std_XYZ| The "same" as the 3-5 variable, but in the frequency domain |
-|49-51|fBodyAccJerk_mean_XYZ| The "same" as the 3-5 variable, but in the frequency domain |
-|52-54|fBodyAccJerk_std_XYZ| The "same" as the 3-5 variable, but in the frequency domain|
-|55-57|fBodyGyro_mean_XYZ| The "same" as the 3-5 variable, but in the frequency domain |
-|58-60|fBodyGyro_std_XYZ| The "same" as the 3-5 variable, but in the frequency domain |
-|61|fBodyAccMag_mean| The "same" as the 3-5 variable, but in the frequency domain |
-|62|fBodyAccMag_std| The "same" as the 3-5 variable, but in the frequency domain |
-|63|fBodyBodyAccJerkMag_mean| The "same" as the 3-5 variable, but in the frequency domain |
-|64|fBodyBodyAccJerkMag_std| The "same" as the 3-5 variable, but in the frequency domain |
-|65|fBodyBodyGyroMag_mean| The "same" as the 3-5 variable, but in the frequency domain |
-|66|fBodyBodyGyroMag_std| The "same" as the 3-5 variable, but in the frequency domain |
-|67|fBodyBodyGyroJerkMag_mean| The "same" as the 3-5 variable, but in the frequency domain |
-|68|fBodyBodyGyroJerkMag_std| The "same" as the 3-5 variable, but in the frequency domain |
+|46-48|fBodyAcc_std_XYZ| The "same" as the 6-8 variable, but in the frequency domain |
+|49-51|fBodyAccJerk_mean_XYZ| The "same" as the 15-17 variable, but in the frequency domain |
+|52-54|fBodyAccJerk_std_XYZ| The "same" as the 18-20 variable, but in the frequency domain|
+|55-57|fBodyGyro_mean_XYZ| The "same" as the 21-23 variable, but in the frequency domain |
+|58-60|fBodyGyro_std_XYZ| The "same" as the 24-26 variable, but in the frequency domain |
+|61|fBodyAccMag_mean| The "same" as the 36 variable, but in the frequency domain |
+|62|fBodyAccMag_std| The "same" as the 37 variable, but in the frequency domain |
+|63|fBodyBodyAccJerkMag_mean| The "same" as the 38 variable, but in the frequency domain |
+|64|fBodyBodyAccJerkMag_std| The "same" as the 39 variable, but in the frequency domain |
+|65|fBodyBodyGyroMag_mean| The "same" as the 40 variable, but in the frequency domain |
+|66|fBodyBodyGyroMag_std| The "same" as the 41 variable, but in the frequency domain |
+|67|fBodyBodyGyroJerkMag_mean| The "same" as the 42 variable, but in the frequency domain |
+|68|fBodyBodyGyroJerkMag_std| The "same" as the 43 variable, but in the frequency domain |
