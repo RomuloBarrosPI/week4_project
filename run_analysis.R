@@ -14,8 +14,8 @@ files <- list.files(path = "UCI HAR Dataset/train",
                     full.names = TRUE,
                     pattern = "_train.txt$")
 
-# This function reads each file from both train and test sets and merge them 
-# into one dataset, creating a new file with "merged" appended to filename.
+# This for loop reads each file from both train and test sets and merge them 
+# into one dataset, creating a new file with the word "merged" appended to filename.
 for (each_file in files) {
         
         train <- read.table(each_file,
