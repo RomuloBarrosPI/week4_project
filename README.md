@@ -1,4 +1,6 @@
-# project_week4
+# Reade me
+
+### This file explains how the script works
 
 The run_analisys.R script merges two data sets (train and test) into a single one. Then it performs some tidying tasks so the data set can be used for further analisys.
 
