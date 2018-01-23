@@ -1,41 +1,41 @@
 Code Book 
 =========
 
-|Variable|Description|
-|--------|-----------|
-|subject| An identifier of the subject who carried out the experiment.|
-|activity| The activity performed by the subject. |
-|tBodyAcc_mean_XYZ| The mean of the estimated body acceleration for each of the 3 axis (X, Y, and Y)|
-|tBodyAcc_std_XYZ| The standard deviation of the estimated body acceleration for each of the 3 axis (X, Y, and Y)|
-|tGravityAcc_mean_XYZ| The mean of gravitational acceleration for each of the 3 axis (X, Y, and Y)|
-|tGravityAcc_std_XYZ| The standard deviation of gravitational acceleration for each of the 3 axis (X, Y, and Y)|
-|tBodyAccJerk_mean_XYZ| The mean of jerk signals from the estimated body acceleration for each of the 3 axis (X, Y, and Y)|
-|tBodyAccJerk_std_XYZ| The standard deviation of jerk signals from the estimated body acceleration for each of the 3 axis (X, Y, and Y)|
-|tBodyGyro_mean_XYZ| The mean of the estimated body angular velocity from the gyroscope for each of the 3 axis (X, Y, and Y)|
-|tBodyGyro_std_XYZ| The standard deviation of the estimated body angular velocity from the gyroscope for each of the 3 axis (X, Y, and Y) |
-|tBodyGyroJerk_mean_XYZ| The mean of jerk signals from the estimated body angular velocity from the gyroscope for each of the 3 axis (X, Y, and Y)|
-|tBodyGyroJerk_std_XYZ| The standard deviation of jerk signals from the estimated body angular velocity from the gyroscope for each of the 3 axis (X, Y, and Y)|
-|tBodyAccMag_mean| The mean of the estimated body acceleration magnitude |
-|tBodyAccMag_std| The standard deviation of the estimated body acceleration magnitude |
-|tGravityAccMag_mean| The mean of gravity acceleration magnitude |
-|tGravityAccMag_std| The standard deviation of gravity acceleration magnitude |
-|tBodyAccJerkMag_mean| The mean of jerk signals from the estimated body acceleration |
-|tBodyAccJerkMag_std| The standard deviation of jerk signals from the estimated body acceleration |
-|tBodyGyroMag_mean| The mean of the magnitude of the estimated body angular velocity from the gyroscope |
-|tBodyGyroMag_std| The standard deviation of the magnitude of the estimated body angular velocity from the gyroscope |
-|tBodyGyroJerkMag_mean| The mean of jerk signals from the estimated body angular velocity from the gyroscope |
-|tBodyGyroJerkMag_std| The standard deviation of the jerk signals from estimated body angular velocity from the gyroscope |
-|fBodyAcc_mean_XYZ|  The mean of the estimated body acceleration for each of the 3 axis (X, Y, and Y)|
-|fBodyAcc_std_XYZ|  The standard deviation of for each of the 3 axis (X, Y, and Y)|
-|fBodyAccJerk_mean_XYZ|  The mean of jerk signals from for each of the 3 axis (X, Y, and Y)|
-|fBodyAccJerk_std_XYZ| The standard deviation of  for each of the 3 axis (X, Y, and Y)|
-|fBodyGyro_mean_XYZ| The mean of the estimated body angular velocity from the gyroscope for each of the 3 axis (X, Y, and Y)|
-|fBodyGyro_std_XYZ| The standard deviation of the estimated body angular velocity from the gyroscope for each of the 3 axis (X, Y, and Y)|
-|fBodyAccMag_mean| The mean of  the magnitude of |
-|fBodyAccMag_std| The standard deviation of the magnitude of  |
-|fBodyBodyAccJerkMag_mean| The mean of the magnitude of |
-|fBodyBodyAccJerkMag_std| The standard deviation of the magnitude of |
-|fBodyBodyGyroMag_mean| The mean of the magnitude of the estimated body angular velocity from the gyroscope for each of the 3 axis (X, Y, and Y)|
-|fBodyBodyGyroMag_std| The standard deviation of the magnitude of the estimated body angular velocity from the gyroscope for each of the 3 axis (X, Y, and Y)|
-|fBodyBodyGyroJerkMag_mean| The mean of the magnitude of the estimated body angular velocity from the gyroscope for each of the 3 axis (X, Y, and Y)|
-|fBodyBodyGyroJerkMag_std| The standard deviation of the magnitude of the estimated body angular velocity from the gyroscope for each of the 3 axis (X, Y, and Y)|
+|#|Variable|Description|
+|-|--------|-----------|
+|1|subject| An identifier of the subject who carried out the experiment.|
+|2|activity| The activity performed by the subject. |
+|3-5|tBodyAcc_mean_XYZ| The mean of the estimated body acceleration for each of the 3 axis (X, Y, and Y)|
+|6-8|tBodyAcc_std_XYZ| The standard deviation of the estimated body acceleration for each of the 3 axis (X, Y, and Y)|
+|9-11|tGravityAcc_mean_XYZ| The mean of gravitational acceleration for each of the 3 axis (X, Y, and Y)|
+|12-14|tGravityAcc_std_XYZ| The standard deviation of gravitational acceleration for each of the 3 axis (X, Y, and Y)|
+|15-17|tBodyAccJerk_mean_XYZ| The mean of jerk signals from the estimated body acceleration for each of the 3 axis (X, Y, and Y)|
+|18-20|tBodyAccJerk_std_XYZ| The standard deviation of jerk signals from the estimated body acceleration for each of the 3 axis (X, Y, and Y)|
+|21-23|tBodyGyro_mean_XYZ| The mean of the estimated body angular velocity from the gyroscope for each of the 3 axis (X, Y, and Y)|
+|24-26|tBodyGyro_std_XYZ| The standard deviation of the estimated body angular velocity from the gyroscope for each of the 3 axis (X, Y, and Y) |
+|27-29|tBodyGyroJerk_mean_XYZ| The mean of jerk signals from the estimated body angular velocity from the gyroscope for each of the 3 axis (X, Y, and Y)|
+|30-32|tBodyGyroJerk_std_XYZ| The standard deviation of jerk signals from the estimated body angular velocity from the gyroscope for each of the 3 axis (X, Y, and Y)|
+|33|tBodyAccMag_mean| The mean of the magnitude of the estimated body acceleration |
+|34|tBodyAccMag_std| The standard deviation of the magnitude of the estimated body acceleration |
+|35|tGravityAccMag_mean| The mean of the magnitude of the gravity acceleration |
+|36|tGravityAccMag_std| The standard deviation of the magnitude of the gravity acceleration magnitude |
+|37|tBodyAccJerkMag_mean| The mean of the magnitude of the jerk signals from the estimated body acceleration |
+|38|tBodyAccJerkMag_std| The standard deviation of the magnitude of the jerk signals from the estimated body acceleration |
+|39|tBodyGyroMag_mean| The mean of the magnitude of the estimated body angular velocity from the gyroscope |
+|40|tBodyGyroMag_std| The standard deviation of the magnitude of the estimated body angular velocity from the gyroscope |
+|41|tBodyGyroJerkMag_mean| The mean of the magnitude of the jerk signals from the estimated body angular velocity from the gyroscope |
+|42|tBodyGyroJerkMag_std| The standard deviation of the magnitude of the jerk signals from estimated body angular velocity from the gyroscope |
+|43-45|fBodyAcc_mean_XYZ| The "same" as the 3-5 variable, but in the frequency domain |
+|46-48|fBodyAcc_std_XYZ| The "same" as the 3-5 variable, but in the frequency domain |
+|49-51|fBodyAccJerk_mean_XYZ| The "same" as the 3-5 variable, but in the frequency domain |
+|52-54|fBodyAccJerk_std_XYZ| The "same" as the 3-5 variable, but in the frequency domain|
+|55-57|fBodyGyro_mean_XYZ| The "same" as the 3-5 variable, but in the frequency domain |
+|58-60|fBodyGyro_std_XYZ| The "same" as the 3-5 variable, but in the frequency domain |
+|61|fBodyAccMag_mean| The "same" as the 3-5 variable, but in the frequency domain |
+|62|fBodyAccMag_std| The "same" as the 3-5 variable, but in the frequency domain |
+|63|fBodyBodyAccJerkMag_mean| The "same" as the 3-5 variable, but in the frequency domain |
+|64|fBodyBodyAccJerkMag_std| The "same" as the 3-5 variable, but in the frequency domain |
+|65|fBodyBodyGyroMag_mean| The "same" as the 3-5 variable, but in the frequency domain |
+|66|fBodyBodyGyroMag_std| The "same" as the 3-5 variable, but in the frequency domain |
+|67|fBodyBodyGyroJerkMag_mean| The "same" as the 3-5 variable, but in the frequency domain |
+|68|fBodyBodyGyroJerkMag_std| The "same" as the 3-5 variable, but in the frequency domain |
