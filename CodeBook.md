@@ -1,6 +1,15 @@
 Code Book 
 =========
 
+## This file give some explanations to the variables. 
+### For information how the script works, read README.md file, as it was suggested by the project assignment guidelines.
+
+The readings were collected form smartphones held by 30 volunteer subjects. The subjects executed 6 different activities (variable activity). Data were collected by two different features of the smartphone: the accelerometer and the gyroscope. In each activity performed by each subject, some mean and standard deviation measurements were taken by the researchers. Some measurements have both Time and Frequency domains.
+
+This data set have 180 observations of 68 variables.
+
+The variables are as follow:
+
 |#|Variable|Description|
 |-|--------|-----------|
 |1|subject| An identifier of the subject who carried out the experiment.|
